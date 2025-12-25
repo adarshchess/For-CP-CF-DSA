@@ -1,0 +1,9 @@
+// to traverse a string word by word 
+
+string s = "this is a cursed cpp string";
+    string word;
+
+    stringstream ss(s);
+    while (ss >> word) {
+        cout << word << endl;
+    }
