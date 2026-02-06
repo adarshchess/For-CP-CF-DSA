@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+
+bool pfsqr(int n){
+    long long temp=sqrt(n);
+    return temp*temp==n;
+}
+
+int main(){
+   int t=0;
+  cin>>t;
+
+  while(t>0){
+      int n=0;
+      cin>>n;
+      
+       // i*i matrix bharni hai with either n=2 wale small boxes ya n=4 wale unit small boxes
+          if((n%2==0&&pfsqr(n/2))||(n%4==0&&pfsqr(n/4))){
+              cout<<"YES"<<endl;
+          }
+      
+      
+      else{
+          cout<<"NO"<<endl;
+      }
+
+
+    t--;
+  }
+
+  
+  
+  return 0;
+  }
